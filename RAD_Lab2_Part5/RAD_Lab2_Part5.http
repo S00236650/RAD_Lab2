@@ -1,0 +1,27 @@
+﻿@RAD_Lab2_Part5_HostAddress = https://localhost:7262
+
+GET {{RAD_Lab2_Part5_HostAddress}}/adlist
+
+###
+
+GET {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
+
+###
+
+POST {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
+Content-Type: application/json
+
+{
+  "Name":"movie"
+}
+
+###
+
+POST {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
+Content-Type: application/json
+
+{
+  "Name":"product"
+}
+
+###
