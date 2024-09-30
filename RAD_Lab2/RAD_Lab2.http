@@ -1,0 +1,35 @@
+﻿@RAD_Lab2_HostAddress = https://localhost:7009
+
+POST {{RAD_Lab2_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true,
+  "priority":1
+}
+
+###
+
+GET {{RAD_Lab2_HostAddress}}/todoitems
+
+###
+
+PUT {{RAD_Lab2_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false,
+  "priority": 2
+}
+
+###
+
+DELETE {{RAD_Lab2_HostAddress}}/todoitems/1
+
+###
+
+GET {{RAD_Lab2_HostAddress}}/todoitems/priority/1
+
+###
