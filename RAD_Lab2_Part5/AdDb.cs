@@ -7,7 +7,7 @@
         public AdDb(DbContextOptions<AdDb> options) : base(options) { }
 
         public DbSet<Ad> Ads => Set<Ad>();
-        public DbSet<Seller> Selers => Set<Seller>();
+        public DbSet<Seller> Sellers => Set<Seller>();
         public DbSet<Category> Categories => Set<Category>();
     }
 }

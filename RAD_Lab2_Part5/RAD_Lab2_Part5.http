@@ -8,12 +8,7 @@ GET {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
 
 ###
 
-POST {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
-Content-Type: application/json
-
-{
-  "Name":"movie"
-}
+GET {{RAD_Lab2_Part5_HostAddress}}/adlist/sellerlist
 
 ###
 
@@ -21,7 +16,27 @@ POST {{RAD_Lab2_Part5_HostAddress}}/adlist/categorylist
 Content-Type: application/json
 
 {
-  "Name":"product"
+  "Name":"Movie"
+}
+
+###
+
+POST {{RAD_Lab2_Part5_HostAddress}}/adlist/sellerlist
+Content-Type: application/json
+
+{
+  "SellerName": "George Lucas"
+}
+
+###
+
+POST {{RAD_Lab2_Part5_HostAddress}}/adlist
+Content-Type: application/json
+
+{
+  "Description": "Star Wars: Revenge of the Sith",
+  "SellerId": 1,
+  "CategoryId": 1
 }
 
 ###
